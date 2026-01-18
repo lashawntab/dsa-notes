@@ -20,9 +20,9 @@ Givens:
 
 **Classification:**  
 - Domain / Problem Context:  Arrays
-- Type / Pattern:  Linear Scan
+- Type / Pattern:  Linear Scan 
 - Input Characteristics: <!-- Size, Sorted/Unsorted, Duplicates allowed?, Range, Negative numbers -->  
-- Expected Output: <!-- Single value, Collection, Boolean, Subsequence -->
+- Expected Output:  Single value number
 
 **Scope:**  
 <!-- Interview-style → correctness + Big O, Production-style → validation + robustness -->

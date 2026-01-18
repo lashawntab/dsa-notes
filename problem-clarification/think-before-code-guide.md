@@ -12,9 +12,9 @@
 
 3. Classify Problem  
 - Domain/Problem Context: What kind of data you are dealing with? e.g. Array, String, Tree - see [domains](domains.md)
-- Type/Pattern: What approach or algorithmic pattern fits? e.g. Search, Count, Optimize, Validate, Substructure, Path - see [patterns](patterns.md)
-- Input characteristics: Size, Sorted/Unsorted, Duplicates allowed?, Range, Negative numbers  
-- Expected output: Single value, Collection, Boolean, Subsequence
+- Type/Pattern: What approach or algorithmic pattern fits? e.g. Search, Count, Optimize, Substructure, Path - see [patterns](patterns.md)
+- Input characteristics: Size, Sorted/Unsorted, Duplicates allowed?, Range, Negative numbers - see [input characteristcs](input-characteristics.md)
+- Expected output: Single value, Collection, Boolean, Subsequence - see [output characteristcs](output-characteristics.md)
 
 4. Scope  
 - Interview-style → focus on correctness + Big O  
