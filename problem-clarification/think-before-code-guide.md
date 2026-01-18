@@ -45,9 +45,7 @@
 - Throughput → batch or amortize
 
 9. Complexity Gate  
-- n ≤ 10⁴ → O(n²) acceptable  
-- n ≤ 10⁵ → O(n log n)  
-- n ≥ 10⁶ → O(n) or streaming
+- Time and space see [complexity](complexity.md)
 
 10. Edge Case Sweep  
 - Empty, Single, Duplicates, Extremes, Worst ordering

@@ -13,7 +13,7 @@ Why we only use Worst case?
 - Best case: Not useful, a lower bound gives no guarantee on real performance.
 - Worst case: Easier to analyze and gives a meaningful upper bound, the standard for evaluating algorithms.
 
-Time Complexity
+Time Complexity - measures the number of operations an algorithm performs as a function of input size (number of operations/running time)
 
 | Big O      | Name         | Typical Meaning                     | Common Examples                  |
 | ---------- | ------------ | ----------------------------------- | -------------------------------- |
@@ -29,7 +29,7 @@ Time Complexity
 | O(n!)      | Factorial    | Permutations                        | Traveling salesman brute force   |
 
 
-Space Complexity - Measures additional memory beyond the input.
+Space Complexity - Measures additional memory beyond the input (extra memory used)
 
 | Big O    | What It Usually Means              |
 | -------- | ---------------------------------- |
@@ -40,15 +40,14 @@ Space Complexity - Measures additional memory beyond the input.
 | O(2ⁿ)    | Storing all subsets                |
 | O(n!)    | Storing all permutations           |
 
-
  Rule of Thumb - Decisions
 
-| Complexity           | Practical Interpretation               |
-| -------------------- | -------------------------------------- |
-| O(1), O(log n), O(n) | Acceptable at scale                    |
-| O(n log n)           | Standard for sorting and similar tasks |
-| O(n²)                | Risky beyond ~10⁴                      |
-| O(2ⁿ), O(n!)         | Only viable for very small n           |
+| Complexity           | Practical Interpretation               | Typical Maximum n | Input Size (n) Guideline |
+| -------------------- | -------------------------------------- | ----------------- | ------------------------ |
+| O(1), O(log n), O(n) | Acceptable at scale                    | 10⁸ – 10⁹         | n ≥ 10⁶                  |
+| O(n log n)           | Standard for sorting and similar tasks | 10⁶ – 10⁷         | 10⁵ < n ≤ 10⁶            |
+| O(n²)                | Risky, may be too slow                 | ~10⁴              | n ≤ 10⁴                  |
+| O(2ⁿ), O(n!)         | Only viable for very small n           | ≤ 20 – 25         | n ≤ 20                   |
 
 Common mistakes
 
@@ -58,7 +57,3 @@ Common mistakes
 | Assuming recursion is O(1) space | Call stack counts       |
 | Forgetting dominant term         | Lower terms are ignored |
 | Mixing time and space            | Analyze separately      |
-
-Tip:
-
-The input list itself is not counted as extra space.
