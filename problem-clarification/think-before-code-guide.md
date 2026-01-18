@@ -11,8 +11,8 @@
 - Highlight anything unclear or ambiguous
 
 3. Classify Problem  
-- Domain: Array, String, Tree, Graph, Heap, Linked List, Matrix  
-- Type/Pattern: Search, Count, Optimize, Transform, Validate, Substructure, Path  
+- Domain/Problem Context: What kind of data you are dealing with? e.g. Array, String, Tree - see [domains](domains.md)
+- Type/Pattern: What approach or algorithmic pattern fits? e.g. Search, Count, Optimize, Validate, Substructure, Path - see [patterns](patterns.md)
 - Input characteristics: Size, Sorted/Unsorted, Duplicates allowed?, Range, Negative numbers  
 - Expected output: Single value, Collection, Boolean, Subsequence
 
