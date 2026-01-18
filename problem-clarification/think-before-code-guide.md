@@ -21,12 +21,19 @@
 - Production-style → focus on validation + robustness
 
 5. Scale  
-- Single machine? → normal algorithms; No → partition, aggregate, minimize network  
-- Runs in memory? → random access ok; No → streaming, chunking
+- Single machine? → normal algorithms; No → partition, aggregate, minimize network
+  - All data fits in memory on one machine.
+  - No need to worry about network, communication, or parallel coordination.
+  - Runs in memory? → random access ok; No → streaming, chunking
+- Multi-machine / distributed
+  - Data is too large to fit on one machine or arrives from multiple sources.
+  - You need distributed algorithms, like MapReduce: each machine finds a local max, then a global max is computed.
+  - Adds complexity: network cost, failure handling, and combining results.
 
 6. Queries  
 - One query → direct computation  
 - Many queries → Offline: preprocess; Online: indexed structures
+- see [queries](queries.md)
 
 7. Constraints  
 - Mutate input? → in-place vs copy  

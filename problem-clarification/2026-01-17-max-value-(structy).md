@@ -21,30 +21,28 @@ Givens:
 **Classification:**  
 - Domain / Problem Context:  Arrays
 - Type / Pattern:  Linear Scan 
-- Input Characteristics: <!-- Size, Sorted/Unsorted, Duplicates allowed?, Range, Negative numbers -->  
+- Input Characteristics:   Size 100k, Unsorted
 - Expected Output:  Single value number
 
 **Scope:**  
-<!-- Interview-style → correctness + Big O, Production-style → validation + robustness -->
+Interview-style
 
-**Scale:**  
-- Single machine?  
-- Runs in memory?
+**Scale:**    
+- Runs in memory
 
 **Queries:**  
-- One query or Many queries?  
-- Offline or Online?
+- One query
+- Offline
 
 **Constraints:**  
-- Can input be mutated?  
-- Pure function?  
-- Concurrency?
+- Pure function  
 
 **Performance Goal:**  
 <!-- Latency vs Throughput -->
 
 **Complexity Gate:**  
-<!-- Expected n → algorithm class -->
+Time: O(n)
+Space O(1)
 
 **Edge Case Sweep:**  
 - Empty  
