@@ -1,3 +1,5 @@
+Input guarantees, contract of what to expect
+
 | **Characteristic**      | **What It Means**                   | **Why It Matters / Implications**                                     |
 | ----------------------- | ----------------------------------- | --------------------------------------------------------------------- |
 | Size (n)                | Number of elements                  | Determines time complexity limits                                     |

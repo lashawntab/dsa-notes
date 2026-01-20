@@ -11,10 +11,10 @@
 - Highlight anything unclear or ambiguous
 
 3. Classify Problem  
-- Domain/Problem Context: What kind of data you are dealing with? e.g. Array, String, Tree - see [domains](domains.md)
-- Type/Pattern: What approach or algorithmic pattern fits? e.g. Search, Count, Optimize, Substructure, Path - see [patterns](patterns.md)
-- Input characteristics: Size, Sorted/Unsorted, Duplicates allowed?, Range, Negative numbers - see [input characteristcs](input-characteristics.md)
-- Expected output: Single value, Collection, Boolean, Subsequence - see [output characteristcs](output-characteristics.md)
+- Domain/Problem Context: What kind of data? (e.g. Array, String, Tree) — see [domains](domains.md)
+- Type/Pattern: Which approach or algorithmic pattern? (e.g. Search, Count, Optimize) — see [patterns](patterns.md)
+- Input characteristics: What shape/constraints? (e.g. size, sorted, range) — see [input-characteristics](input-characteristics.md)
+- Expected output: What form? (e.g. value, collection, Boolean) — see [output-characteristics](output-characteristics.md)
 
 4. Scope  
 - Interview-style → focus on correctness + Big O  
@@ -30,25 +30,38 @@
   - You need distributed algorithms, like MapReduce: each machine finds a local max, then a global max is computed.
   - Adds complexity: network cost, failure handling, and combining results.
 
-6. Queries  
+6. Queries ([queries](queries.md))
 - One query → direct computation  
 - Many queries → Offline: preprocess; Online: indexed structures
-- see [queries](queries.md)
 
-7. Constraints  
-- Mutate input? → in-place vs copy  
-- Pure function? → no side effects  
-- Concurrency? → immutability or coordination
+7. Constraints ([constraints](constraints.md))
+- Algorithmic core constraints
+- Performance envelope constraints
+- Behavioral and correctness constraints
+- Execution model constraints
 
-8. Performance Goal  
-- Latency → optimize single operation  
-- Throughput → batch or amortize
+-- What to focus on when:
+ * Interviews Focus almost entirely on Algorithmic core and Performance envelope.
+ * System design / production focus on all four sections matter.
+ * If not stated assume defaults
+    * One query
+    * Offline
+    * Single machine
+    * Mutable input
+    * Deterministic
 
-9. Complexity Gate  
-- Time and space see [complexity](complexity.md)
+8. Performance Goal ([performance](performance.md)) 
+- Latency → Someone is waiting 
+- Throughput → Background work
+- Consistency vs availability once partitions exist.
 
-10. Edge Case Sweep  
-- Empty, Single, Duplicates, Extremes, Worst ordering
+9. Complexity Gate ([complexity](complexity.md))
+- Time and space
+
+10. Edge Case Sweep ([edge cases](edge-cases.md))
+- Input characterization guarantees the legal input set
+- Edge case sweep targets the smallest, largest, and most fragile inputs inside that set.
+- This is not the same as negative testing or out of bounds.
 
 11. Clarifying Questions & Assumptions  
 - Record all questions you would ask  
