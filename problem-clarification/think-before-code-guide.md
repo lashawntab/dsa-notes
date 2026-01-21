@@ -62,10 +62,14 @@
 - Input characterization guarantees the legal input set
 - Edge case sweep targets the smallest, largest, and most fragile inputs inside that set.
 - This is not the same as negative testing or out of bounds.
+- e.g. non-empty array (test length = 1)
 
-11. Clarifying Questions & Assumptions  
+11. Clarifying Questions & Assumptions  ([clarifying questions](clarifying-questions.md))
+- Steps 1–10 surface signals.
+- Step 11 is where you lock them in.
 - Record all questions you would ask  
 - List assumptions and constraints for your approach
+- Summarize everything.  ([summary script](pre-coding-summary-verbal-script.md))
 
 12. Outline Solution  
 - Only now create verbal plan or pseudocode
